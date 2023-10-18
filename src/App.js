@@ -14,7 +14,8 @@ function App() {
     <div className='flex flex-row '>
      <div className='w-[250px]'><SideNavbar/></div> 
       <Routes>
-        <Route path='/dashboard' index={true} element={<Landing/>}/>
+      <Route path='/' element={<Landing/>}/>
+        <Route path='/dashboard' element={<Landing/>}/>
         <Route path='/product' element={<Product/>}/>
         <Route path='/customer' element={<Customer/>}/>
         <Route path='/income' element={<Income/>}/>
